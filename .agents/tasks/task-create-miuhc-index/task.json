@@ -1,0 +1,7 @@
+{
+  "task_id": "task-create-miuhc-index",
+  "task_description": "Create a comprehensive index.html product page for MiUHC and MiUHC Syariah by Manulife Indonesia, merging the multi-tab layout from Indexsample2.html with the premium calculator from Indexsample.html",
+  "status": "in_progress",
+  "feature_order": ["FEAT-001"],
+  "blocked_reason": null
+}

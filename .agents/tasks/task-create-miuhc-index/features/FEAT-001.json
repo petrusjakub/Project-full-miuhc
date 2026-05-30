@@ -1,0 +1,51 @@
+{
+  "id": "FEAT-001",
+  "type": "feat",
+  "description": "Create a comprehensive index.html file for MiUHC product page that merges the multi-tab layout from Indexsample2.html with the calculator functionality from Indexsample.html. The page covers both MiUHC Konvensional and MiUHC Syariah products.",
+  "status": "in_progress",
+  "steps": [
+    "Create /projects/sandbox/Project-full-miuhc/index.html as a single self-contained HTML file",
+    "Use the multi-tab layout structure from Indexsample2.html: sticky header, green gradient header, sticky tab navigation with horizontal scrolling, tab content sections, floating WA button",
+    "Add sticky WA banner at top: 'Petrus Jakub Partner Bisnis Manulife' + WA logo SVG + '087781896087', clickable link to https://wa.me/6287781896087?text=Pak%20Petrus%2C%20saya%20mau%20tanya%20soal%20Asuransi%20Kesehatan%20MiUHC",
+    "Create tabs: Ringkasan Produk, Manfaat, Kalkulator Premi, Cara Klaim, RS Rekanan, Layanan Medix, FAQ",
+    "Tab 1 - Ringkasan Produk: Product overview of MiUHC and MiUHC Syariah in simple Indonesian. Mention key features: cashless worldwide, no-claim bonus/discount, cover usia 30 hari-85 tahun, rawat inap sesuai tagihan, plans from 5M to Unlimited",
+    "Tab 2 - Manfaat: Detail benefits including Rawat Inap (sesuai tagihan), Rawat Jalan, Rawat Gigi (Syariah only), Asuransi Jiwa 30 Juta, No-Claim Bonus (limit naik 10%/tahun maks 50%), No-Claim Discount (10% maks 15%). Show plan comparison table with plan names (Diamond, Ruby, Emerald, Topaz, Topaz ID, Jade, Jade ID, Sapphire) and their coverage areas, room types, annual limits. Also mention Smart Plans with deductible for 40% savings.",
+    "Tab 3 - Kalkulator Premi (MOST IMPORTANT): Copy the ENTIRE calculator logic from Indexsample.html including all data objects (DATA_KONV, DATA_SYARIAH, DATA_KONV_RJ, DATA_SYARIAH_RJ, DATA_SYARIAH_GIGI, PLAN_NAMES, PLAN_DETAILS), the switchTab function, calculate function, buildCard function, calcPremi function, formatRp function, escapeHtml function, toggleAllPlans function. The calculator has: Konvensional/Syariah tabs, gender selector (Pria/Wanita), age selector (0-85), benefit type selector (Rawat Inap/Jalan/Gigi where Gigi only for Syariah). It displays plan cards in 'Most Wanted' section (Jade ID, Jade, Topaz ID, Topaz), 'HEMAT 40%' section (Smart Plans), and expandable 'All Plans' section. Each card shows annual premium, monthly premium (annual*1.14/12 rounded to hundreds), wilayah, kamar, limit kartu, asuransi jiwa 30jt.",
+    "Tab 4 - Cara Klaim: Simple explanation of how to claim - cashless (show card at hospital) vs reimbursement. Mention contact numbers, Halodoc registration, domestic and international cashless flow.",
+    "Tab 5 - RS Rekanan: Information about partner hospitals, mention Preferred RS list, link to Manulife ID app for eCard access. Mention that complete RS list can be checked at Manulife website.",
+    "Tab 6 - Layanan Medix: Explain Medix as personal medical partner. Include video link https://youtu.be/TtF0DDeyVLY?si=Q36Yb3HBTrJ7F-Yy. Explain how to request: email medical_support@manulife.com with nama nasabah, no polis, no KTP, no telp, kondisi medis. Contact Ibu Hanny 0811-7333-129.",
+    "Tab 7 - FAQ: Common questions about MiUHC in accordion format (click to expand). Include questions like: Apa itu MiUHC?, Apa bedanya Konvensional vs Syariah?, Berapa usia masuk?, Apa itu deductible?, Apa itu No-Claim Bonus/Discount?, Bagaimana cara klaim?, Apa saja pengecualian?, Berapa masa tunggu?",
+    "Add floating WA button (bottom right) linking to same WA URL",
+    "Use color scheme: #00a758 primary green, #006838 dark green (matching Indexsample2.html)",
+    "Ensure fully responsive design for mobile",
+    "All content in simple Indonesian language suitable for non-expert audience (orang awam)",
+    "Include proper HTML meta tags for viewport and charset"
+  ],
+  "acceptance_criteria": [
+    "index.html exists at /projects/sandbox/Project-full-miuhc/index.html",
+    "File is valid HTML5 with proper structure",
+    "Sticky WA header banner is present with correct phone number and WhatsApp link",
+    "All 7+ tabs are present and navigable",
+    "Calculator tab contains all 6 premium data objects (DATA_KONV, DATA_SYARIAH, DATA_KONV_RJ, DATA_SYARIAH_RJ, DATA_SYARIAH_GIGI, PLAN_DETAILS)",
+    "Calculator has working tab switch between Konvensional and Syariah",
+    "Calculator has gender, age (0-85), and benefit type selectors",
+    "Calculator displays plan cards with annual and monthly premiums",
+    "Monthly premium formula is: Math.round(annual * 1.14 / 12 / 100) * 100",
+    "Rawat Gigi option only available for Syariah tab",
+    "FAQ section uses accordion (click to expand/collapse)",
+    "Floating WA button present at bottom right",
+    "Page is responsive for mobile devices",
+    "All text is in simple Indonesian"
+  ],
+  "verification": [
+    "Check that index.html file exists and is non-empty",
+    "Grep for key data objects to confirm premium data is embedded",
+    "Grep for the calculate function to confirm calculator logic is present",
+    "Grep for switchTab function",
+    "Grep for WhatsApp link with correct phone number",
+    "Grep for all tab section IDs",
+    "Check file size is reasonable (should be large due to embedded premium data - at least 200KB)"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}
