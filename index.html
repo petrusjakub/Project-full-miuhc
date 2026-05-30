@@ -146,19 +146,19 @@ body{padding-top:0}
 
 <!-- Tabs Navigation -->
 <div class="tabs-container">
-<ul class="tabs" id="mainTabs">
-<li class="active" data-tab="ringkasan">Ringkasan Produk</li>
-<li data-tab="manfaat">Manfaat</li>
-<li data-tab="kalkulator">Kalkulator Premi</li>
-<li data-tab="klaim">Cara Klaim</li>
-<li data-tab="rs">RS Rekanan</li>
-<li data-tab="medix">Layanan Medix</li>
-<li data-tab="faq">FAQ</li>
+<ul class="tabs" id="mainTabs" role="tablist">
+<li class="active" data-tab="ringkasan" role="tab">Ringkasan Produk</li>
+<li data-tab="manfaat" role="tab">Manfaat</li>
+<li data-tab="kalkulator" role="tab">Kalkulator Premi</li>
+<li data-tab="klaim" role="tab">Cara Klaim</li>
+<li data-tab="rs" role="tab">RS Rekanan</li>
+<li data-tab="medix" role="tab">Layanan Medix</li>
+<li data-tab="faq" role="tab">FAQ</li>
 </ul>
 </div>
 
 <!-- Tab 1: Ringkasan Produk -->
-<div class="tab-content active" id="tab-ringkasan">
+<div class="tab-content active" id="tab-ringkasan" role="tabpanel">
 <div class="card">
 <h2>Apa itu MiUHC?</h2>
 <p><strong>MiUHC (Mi Ultimate Healthcare)</strong> adalah asuransi kesehatan individu dari Manulife Indonesia yang memberikan perlindungan kesehatan menyeluruh untuk Anda dan keluarga.</p>
@@ -188,7 +188,7 @@ body{padding-top:0}
 </div>
 
 <!-- Tab 2: Manfaat -->
-<div class="tab-content" id="tab-manfaat">
+<div class="tab-content" id="tab-manfaat" role="tabpanel">
 <div class="card">
 <h2>Manfaat MiUHC</h2>
 
@@ -249,7 +249,7 @@ body{padding-top:0}
 </div>
 
 <!-- Tab 3: Kalkulator Premi -->
-<div class="tab-content" id="tab-kalkulator">
+<div class="tab-content" id="tab-kalkulator" role="tabpanel">
 <div class="card">
 <h2>Kalkulator Premi MiUHC</h2>
 <p style="margin-bottom:20px">Hitung estimasi premi MiUHC berdasarkan usia, jenis kelamin, dan jenis manfaat yang Anda butuhkan.</p>
@@ -384,7 +384,7 @@ body{padding-top:0}
 </div>
 
 <!-- Tab 4: Cara Klaim -->
-<div class="tab-content" id="tab-klaim">
+<div class="tab-content" id="tab-klaim" role="tabpanel">
 <div class="card">
 <h2>Cara Klaim MiUHC</h2>
 
@@ -421,7 +421,7 @@ body{padding-top:0}
 </div>
 
 <!-- Tab 5: RS Rekanan -->
-<div class="tab-content" id="tab-rs">
+<div class="tab-content" id="tab-rs" role="tabpanel">
 <div class="card">
 <h2>Rumah Sakit Rekanan</h2>
 <p>Manulife memiliki jaringan <strong>1000+ rumah sakit rekanan</strong> di seluruh Indonesia dan dunia.</p>
@@ -450,7 +450,7 @@ body{padding-top:0}
 </div>
 
 <!-- Tab 6: Layanan Medix -->
-<div class="tab-content" id="tab-medix">
+<div class="tab-content" id="tab-medix" role="tabpanel">
 <div class="card">
 <h2>Layanan Medix</h2>
 <p><strong>Medix</strong> adalah layanan personal medical case management yang diberikan <strong>GRATIS</strong> untuk semua nasabah Manulife.</p>
@@ -488,52 +488,52 @@ body{padding-top:0}
 </div>
 
 <!-- Tab 7: FAQ -->
-<div class="tab-content" id="tab-faq">
+<div class="tab-content" id="tab-faq" role="tabpanel">
 <div class="card">
 <h2>Pertanyaan yang Sering Ditanya (FAQ)</h2>
 
 <div class="faq-item">
-<div class="faq-question">Apa itu MiUHC?</div>
+<div class="faq-question" aria-expanded="false">Apa itu MiUHC?</div>
 <div class="faq-answer"><p>MiUHC (Mi Ultimate Healthcare) adalah asuransi kesehatan individu dari Manulife Indonesia. Produk ini memberikan perlindungan rawat inap sesuai tagihan (as charged) tanpa sub-limit, artinya semua biaya perawatan di rumah sakit ditanggung sesuai tagihan yang dikeluarkan RS (selama masih dalam limit plan).</p></div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">Apa bedanya Konvensional vs Syariah?</div>
+<div class="faq-question" aria-expanded="false">Apa bedanya Konvensional vs Syariah?</div>
 <div class="faq-answer"><p><strong>Konvensional:</strong> Berbasis premi asuransi biasa. Dana premi dikelola oleh Manulife.<br><strong>Syariah:</strong> Berbasis kontribusi dan tabarru (dana kebajikan). Dikelola sesuai prinsip syariah dengan akad tolong-menolong. MiUHC Syariah juga memiliki tambahan manfaat Rawat Gigi yang tidak tersedia di versi Konvensional.</p></div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">Berapa usia masuk MiUHC?</div>
+<div class="faq-question" aria-expanded="false">Berapa usia masuk MiUHC?</div>
 <div class="faq-answer"><p>Usia masuk MiUHC adalah <strong>30 hari sampai 85 tahun</strong>. Setelah menjadi nasabah, polis dapat di-renew (diperpanjang) seumur hidup tanpa batas usia maksimal.</p></div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">Apa itu Deductible (Smart Plan)?</div>
+<div class="faq-question" aria-expanded="false">Apa itu Deductible (Smart Plan)?</div>
 <div class="faq-answer"><p>Deductible adalah biaya yang harus ditanggung sendiri oleh nasabah sebelum manfaat asuransi mulai berlaku. Misalnya, jika deductible Rp5 juta dan tagihan RS Rp20 juta, maka Rp5 juta pertama Anda bayar sendiri dan Rp15 juta sisanya ditanggung asuransi. Keuntungannya: premi Smart Plan bisa <strong>hemat sekitar 40%</strong> dibanding plan reguler. Cocok untuk yang sudah punya asuransi dari kantor sebagai pelengkap.</p></div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">Apa itu No-Claim Bonus?</div>
+<div class="faq-question" aria-expanded="false">Apa itu No-Claim Bonus?</div>
 <div class="faq-answer"><p>No-Claim Bonus adalah reward untuk nasabah yang tidak melakukan klaim dalam 1 tahun polis. <strong>Limit tahunan kartu Anda akan naik 10% per tahun</strong>, dan bisa terus naik hingga maksimal 50% dari limit awal. Contoh: Plan Jade ID dengan limit 10M, setelah 5 tahun tanpa klaim limitnya bisa naik menjadi 15M!</p></div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">Apa itu No-Claim Discount?</div>
+<div class="faq-question" aria-expanded="false">Apa itu No-Claim Discount?</div>
 <div class="faq-answer"><p>No-Claim Discount adalah diskon premi untuk nasabah yang tidak melakukan klaim. Anda mendapat <strong>diskon 10% dari premi tahun berikutnya</strong> jika tidak ada klaim, dengan maksimal akumulasi diskon 15%. Jadi premi Anda bisa semakin murah setiap tahun!</p></div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">Bagaimana cara klaim MiUHC?</div>
+<div class="faq-question" aria-expanded="false">Bagaimana cara klaim MiUHC?</div>
 <div class="faq-answer"><p>Ada 2 cara klaim:<br><strong>1. Cashless:</strong> Langsung tunjukkan kartu MiUHC/eCard di RS Rekanan Manulife. Tidak perlu bayar di muka.<br><strong>2. Reimbursement:</strong> Bayar dulu biaya perawatan, kumpulkan dokumen (kuitansi asli, resume medis, dll), lalu kirim ke Manulife untuk penggantian.</p></div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">Apa saja pengecualian MiUHC?</div>
+<div class="faq-question" aria-expanded="false">Apa saja pengecualian MiUHC?</div>
 <div class="faq-answer"><p>Beberapa pengecualian umum:<br>- Pre-existing conditions (penyakit yang sudah ada sebelum polis aktif) - masa tunggu 12 bulan<br>- Perawatan kosmetik/estetika<br>- Perawatan gigi (kecuali MiUHC Syariah dengan rider gigi)<br>- Perawatan akibat olahraga berbahaya<br>- Kondisi yang sudah ada sebelum polis dimulai perlu masa tunggu</p></div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">Berapa masa tunggu MiUHC?</div>
+<div class="faq-question" aria-expanded="false">Berapa masa tunggu MiUHC?</div>
 <div class="faq-answer"><p><strong>30 hari</strong> - Masa tunggu untuk penyakit umum (setelah polis aktif, perlu tunggu 30 hari sebelum bisa klaim)<br><strong>12 bulan</strong> - Masa tunggu untuk penyakit khusus tertentu seperti: hernia, amandel, adenoid, hemoroid/wasir, katarak, batu ginjal/saluran kemih, gangguan reproduksi, dan kondisi pre-existing lainnya.</p></div>
 </div>
 
@@ -568,6 +568,7 @@ questions.forEach(function(q){
     q.addEventListener('click', function(){
         var item = q.parentElement;
         item.classList.toggle('open');
+        q.setAttribute('aria-expanded', item.classList.contains('open') ? 'true' : 'false');
     });
 });
 })();
@@ -640,6 +641,7 @@ window.toggleAllPlans = function() {
 };
 
 function buildCard(planName, rs, isSmart, benefitLabel) {
+    if (rs === undefined || rs === null) return '';
     var premi = calcPremi(rs);
     var details = PLAN_DETAILS[planName];
     var deductibleHtml = '';
@@ -694,7 +696,7 @@ window.calculate = function() {
         row = data[age];
     }
     if (!row) {
-        document.getElementById('calcResults').innerHTML = '<div class="calc-info-box"><h4>Data tidak tersedia</h4><p>Data premi untuk usia ' + age + ' tahun tidak tersedia untuk jenis manfaat ini.</p></div>';
+        document.getElementById('calcResults').innerHTML = '<div class="calc-info-box"><h4>Data tidak tersedia</h4><p>Data premi untuk usia ' + escapeHtml(age) + ' tahun tidak tersedia untuk jenis manfaat ini.</p></div>';
         return;
     }
 
