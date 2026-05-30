@@ -1,0 +1,21 @@
+{
+  "project_type": "Static HTML product page with embedded JavaScript premium calculator",
+  "language": "HTML/CSS/JavaScript",
+  "build_system": "None - single self-contained HTML file",
+  "test_framework": "Manual browser testing - open index.html",
+  "build_command": "N/A - static HTML file",
+  "test_command": "Validate HTML structure with grep checks on the output file",
+  "verification_instructions": "Open index.html in browser, verify all tabs work, calculator produces correct results for various age/gender/benefit combinations",
+  "snapshot_or_generated_files": null,
+  "setup_instructions": "No setup needed - project is a collection of reference files",
+  "environment_constraints": "INTEGRATIONS_ONLY network - cannot install packages. Cannot read xlsx files programmatically. Premium data must be copied from Indexsample.html which already has it embedded as JavaScript objects.",
+  "contribution_requirements": "Output must be a single self-contained index.html file. Must be masterpiece quality, error-free. Language must be simple Indonesian for non-expert audience.",
+  "key_patterns": "Layout follows Indexsample2.html multi-tab pattern with sticky tab navigation. Calculator follows Indexsample.html with DATA_KONV, DATA_SYARIAH, DATA_KONV_RJ, DATA_SYARIAH_RJ, DATA_SYARIAH_GIGI objects and PLAN_DETAILS/PLAN_NAMES constants.",
+  "relevant_files": [
+    "Indexsample.html - Calculator reference with all premium data and logic (plan cards, switchTab, calculate function)",
+    "Indexsample2.html - Layout reference with multi-tab structure, sticky nav, FAQ accordion, floating WA button",
+    "Apa Itu Medix.txt - Medix video link https://youtu.be/TtF0DDeyVLY?si=Q36Yb3HBTrJ7F-Yy",
+    "Cara Request Layanan Medix.txt - Email medical_support@manulife.com with patient data, contact Ibu Hanny 0811-7333-129"
+  ],
+  "directory_structure": "Flat directory with PDF/xlsx reference files, 2 sample HTML files, 2 txt files, image files for cashless flow and benefit tables"
+}
